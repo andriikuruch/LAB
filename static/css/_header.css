@@ -1,0 +1,263 @@
+header {
+    position: relative;
+    margin: 0 auto;
+    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+.header-top {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 175px 213px 369px;
+    grid-template-rows: 0.05fr 0.3fr;
+    gap: 13px 150px;
+    margin: 10px 0 0 33px;
+}
+
+.header__mail,
+.header__schedule,
+.header__sub-menu {
+    color: #858585;
+    line-height: 16px;
+}
+
+.header__mail > img {
+    padding-top: 4px;
+    padding-right: 5px;
+}
+
+.header__schedule,
+.header__sub-menu {
+    line-height: 19px;
+}
+
+.header__schedule > img {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.header__sub-menu a + a {
+    padding-left: 17px;
+}
+
+.vertical_line {
+    height: 38px;
+    width: 2px;
+    margin-right: 21px;
+    background: #F76425;
+}
+
+.header__offer {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone {
+    display: flex;
+}
+
+.header__phone .icon {
+    height: 45px;
+    width: 45px;
+    border: rgba(89, 92, 100, 0.2) solid 1px;
+    margin-right: 15px;
+}
+.header__phone img {
+    position: relative;
+    left: 38%;
+    top: 38%;
+}
+
+.header__phone h5 {
+    padding-top: 1px;
+}
+
+.header__phone a {
+    color: #F36327;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+}
+
+.header__buttons {
+    display: flex;
+}
+
+.btn-call_measurer {
+    margin-right: 10px;
+    width: 190px;
+    height: 45px;
+    color: white;
+    background: linear-gradient(180deg, #FFFFFF -153.33%, rgba(255, 255, 255, 0) 125.56%), #404144;
+    background-blend-mode: overlay, normal;
+    border-radius: 2px;
+}
+
+.btn-culc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 45px;
+    color: white;
+    background: linear-gradient(180deg, #FFFFFF -221.11%, rgba(255, 255, 255, 0) 193.51%), #F36327;
+    background-blend-mode: overlay, normal;
+    cursor: pointer;
+}
+
+.btn-culc img {
+    padding-right: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.select-wrapper {
+    position: relative;
+    user-select: none;
+    display: flex;
+    padding-bottom: 13px;
+    margin-right: 278px;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+}
+
+.select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #858585;
+    height: 16px;
+    padding: 0 0 1px 17px;
+    background: url("../images/maps.png") no-repeat;
+    cursor: pointer;
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 38px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 15px 0 15px;
+    color: #858585;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.custom-option:hover {
+    cursor: pointer;
+    color: #F06326;
+}
+
+.custom-option.selected {
+    color: #F06326;
+}
+
+.arrow {
+    position: relative;
+    height: 6px;
+    width: 6px;
+}
+
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.arrow::before {
+    left: 1px;
+    transform: rotate(135deg);
+    background-color: #F06326;
+}
+
+.arrow::after {
+    left: 4px;
+    transform: rotate(-135deg);
+    background-color: #F06326;
+}
+
+.open .arrow::before {
+    left: 1px;
+    transform: rotate(45deg);
+}
+
+.open .arrow::after {
+    left: 4px;
+    transform: rotate(-45deg);
+}
+
+.active {
+    border-bottom: #F06326 solid 2px;
+}
+
+.select-wrapper.active {
+    padding-bottom: 11px;
+}
+
+.dropdown__trigger {
+    cursor: pointer;
+}
+
+.dropdown-options {
+    position: absolute;
+    display: flex;
+    height: 235px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.dropdown.open .dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.dropdown-options > ul {
+    margin: 40px 40px 50px 105px;
+}
