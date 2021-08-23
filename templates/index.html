@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/style.css">
     <link type="text/css" rel="stylesheet" href="/static/css/_header.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
     <title>LAB</title>
 </head>
 <body>
     <main>
         {% include "_header.html" %}
-        <div style="height: 500px; width: 100%; background: #858585"></div>
+        {% block  content %}{% endblock %}
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="static/js/_header.js"></script>
+    <script type="text/javascript" src="static/js/landing.js"></script>
 </body>
 </html>

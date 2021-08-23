@@ -68,11 +68,9 @@ header {
     width: 45px;
     border: rgba(89, 92, 100, 0.2) solid 1px;
     margin-right: 15px;
-}
-.header__phone img {
-    position: relative;
-    left: 38%;
-    top: 38%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__phone h5 {
