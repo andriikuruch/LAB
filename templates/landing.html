@@ -1,10 +1,10 @@
 {% extends "index.html" %}
 {% block content %}
-    <div class="swiper-container">
+    <div class="slider-container swiper-container">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="slider-wrapper swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="slider-slide swiper-slide">
                 <div class="slide-container">
                     <p class="slide__title"><span>Офисные перегородки</span><br>
                         в Санкт-Петербурге</p>
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="slider-slide swiper-slide">
                 <div class="slide-container">
                     <p class="slide__big-title">Аванс 10%</p>
                     <p class="slide__text">За 10% стоимости вы фиксируете цену до 3х месяцев, с возможностью
@@ -34,7 +34,7 @@
                     <button class="access-btn">Рассчитать стоимость</button>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="slider-slide swiper-slide">
                 <div class="slide-container">
                     <p class="slide__big-title">За 3 дня под ключ</p>
                     <div>
@@ -48,6 +48,11 @@
             </div>
         </div>
         <!-- Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="slider-pagination swiper-pagination"></div>
     </div>
+{#    <div class="catalog-section">#}
+{#        <p class="catalog__title"><span>КАТАЛОГ</span> ОФИСНЫХ ПЕРЕГОРОДОК<br>#}
+{#            И СТЕКЛЯННЫХ КОНСТРУКЦИЙ</p>#}
+{##}
+{#    </div>#}
 {% endblock %}

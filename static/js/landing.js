@@ -25,6 +25,8 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
         bulletElement: 'div',
+        bulletClass: 'slider-pagination-bullet',
+        bulletActiveClass: 'slider-pagination-bullet-active',
         renderBullet: function (index, className) {
             return `<div class=${className}>
                         <img src="${bullets[index].image_path}">
