@@ -16,13 +16,13 @@ const bullets = [
     },
 ];
 
-const swiper = new Swiper('.swiper-container', {
+new Swiper('.slider-container', {
     loop: true,
     speed: 1500,
     simulateTouch: false,
     spaceBetween: 0,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.slider-pagination',
         clickable: true,
         bulletElement: 'div',
         bulletClass: 'slider-pagination-bullet',
@@ -38,5 +38,24 @@ const swiper = new Swiper('.swiper-container', {
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
+    },
+});
+
+const catalogBullets = ["Перегородки", "Двери", "Стеклянные конструкции"];
+
+new Swiper('.catalog-slider-container', {
+    loop: true,
+    speed: 0,
+    simulateTouch: false,
+    spaceBetween: 0,
+    pagination: {
+        el: '.catalog-slider-pagination',
+        clickable: true,
+        bulletElement: 'div',
+        bulletClass: 'catalog-slider-pagination-bullet',
+        bulletActiveClass: 'catalog-slider-pagination-bullet-active',
+        renderBullet: function (index, className) {
+            return `<div class="${className}">${catalogBullets[index]}</div>`;
+        },
     },
 });
