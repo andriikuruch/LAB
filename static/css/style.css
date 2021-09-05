@@ -26,7 +26,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #202020;
-    background-color: white;
+    /*background-color: white;*/
+    /*background: #E5E5E5;*/
+    background: #F9F9F9;
 }
 
 nav, footer, header, aside { display: block }
@@ -51,6 +53,13 @@ main {
     flex-direction: column;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+}
+
 h3 {
     font-size: 20px;
     line-height: 23px;
@@ -60,5 +69,11 @@ h5 {
     font-size: 17px;
     line-height: 20px;
     font-weight: 500;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 

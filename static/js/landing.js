@@ -1,3 +1,9 @@
+const aboutCompanyLink = document.querySelector('.about-company__link');
+aboutCompanyLink.addEventListener('click', evt => {
+    aboutCompanyLink.classList.add('open');
+});
+
+
 const bullets = [
     {
         title: 'Собственное производство',
@@ -57,5 +63,25 @@ new Swiper('.catalog-slider-container', {
         renderBullet: function (index, className) {
             return `<div class="${className}">${catalogBullets[index]}</div>`;
         },
+    },
+});
+
+new Swiper('.swiper-inst', {
+    loop: true,
+    speed: 500,
+    simulateTouch: false,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 6,
+    breakpoints: {
+        1400: {
+            slidesPerView: 8,
+        },
+        1920: {
+            slidesPerView: 10,
+        }
     },
 });

@@ -1,11 +1,15 @@
 header {
+    background: white;
+    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+.header-wrapper {
     position: relative;
     margin: 0 auto;
     width: 1180px;
     display: flex;
     flex-direction: column;
     height: 150px;
-    border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
 }
 
 .header-top {
@@ -63,14 +67,17 @@ header {
     display: flex;
 }
 
-.header__phone .icon {
+.icon {
     height: 45px;
     width: 45px;
     border: rgba(89, 92, 100, 0.2) solid 1px;
-    margin-right: 15px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.header__phone div:last-of-type {
+    margin: 0 0 0 15px;
 }
 
 .header__phone h5 {
@@ -151,7 +158,7 @@ header {
 .custom-options {
     position: absolute;
     display: block;
-    top: 38px;
+    top: 39px;
     left: 0;
     right: 0;
     background: #fff;
@@ -239,7 +246,7 @@ header {
     position: absolute;
     display: flex;
     height: 235px;
-    top: 150px;
+    top: 151px;
     left: 0;
     right: 0;
     background: #fff;
