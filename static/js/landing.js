@@ -1,8 +1,9 @@
 const aboutCompanyLink = document.querySelector('.about-company__link');
-aboutCompanyLink.addEventListener('click', evt => {
-    aboutCompanyLink.classList.add('open');
-});
-
+if (aboutCompanyLink !== null) {
+    aboutCompanyLink.addEventListener('click', evt => {
+        aboutCompanyLink.classList.add('open');
+    });
+}
 
 const bullets = [
     {

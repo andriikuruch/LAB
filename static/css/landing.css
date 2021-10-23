@@ -23,6 +23,7 @@
 
 .swiper-horizontal > .slider-pagination {
     display: flex;
+    min-height: 196px;
     bottom: 85px;
     align-items: flex-end;
     justify-content: center;
@@ -192,6 +193,11 @@
 .title {
     margin: 0 auto;
     width: 1180px;
+}
+
+.catalog-section a {
+    display: flex;
+    justify-content: center;
 }
 
 .catalog__btn {
