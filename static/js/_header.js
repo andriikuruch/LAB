@@ -1,6 +1,5 @@
 document.querySelector('.select-wrapper').addEventListener('click', function() {
     this.querySelector('.select').classList.toggle('open');
-    this.classList.toggle('active');
 });
 
 for (const option of document.querySelectorAll(".custom-option")) {
@@ -18,7 +17,6 @@ window.addEventListener('click', function(e) {
     const selectWrapper = document.querySelector('.select-wrapper');
     if (!select.contains(e.target)) {
         select.classList.remove('open');
-        selectWrapper.classList.remove("active");
     }
 });
 

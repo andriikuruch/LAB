@@ -1,6 +1,8 @@
 header {
     background: white;
     border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+    position: relative;
+    z-index: 5;
 }
 
 .header-wrapper {
@@ -10,6 +12,16 @@ header {
     display: flex;
     flex-direction: column;
     height: 150px;
+}
+
+.header-bottom-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #F0F0F1;
+    z-index: 1;
 }
 
 .header-top {
@@ -123,16 +135,17 @@ header {
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex: 1;
+    z-index: 10;
 }
 
 .select-wrapper {
     position: relative;
     user-select: none;
     display: flex;
-    padding-bottom: 13px;
-    margin-right: 278px;
+    margin-right: auto;
+    height: 100%;
 }
 
 .select {
@@ -158,7 +171,7 @@ header {
 .custom-options {
     position: absolute;
     display: block;
-    top: 39px;
+    top: 37px;
     left: 0;
     right: 0;
     background: #fff;
@@ -167,6 +180,7 @@ header {
     visibility: hidden;
     pointer-events: none;
     z-index: 2;
+    border-top: #F06326 solid 2px;
 }
 
 .select.open .custom-options {
@@ -230,12 +244,12 @@ header {
     transform: rotate(-45deg);
 }
 
-.active {
-    border-bottom: #F06326 solid 2px;
+.dropdown {
+    margin: 0 14px;
 }
 
-.select-wrapper.active {
-    padding-bottom: 11px;
+.dropdown:last-of-type {
+    margin: 0 0 0 13px;
 }
 
 .dropdown__trigger {
